@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "generate-issues": "libs/generate-issues",
     "issue-generator": "apps/issue-generator"
   }
 }

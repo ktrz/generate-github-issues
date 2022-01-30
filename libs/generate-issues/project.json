@@ -1,0 +1,34 @@
+{
+  "root": "libs/generate-issues",
+  "sourceRoot": "libs/generate-issues/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/generate-issues/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/generate-issues"],
+      "options": {
+        "jestConfig": "libs/generate-issues/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/generate-issues",
+        "tsConfig": "libs/generate-issues/tsconfig.lib.json",
+        "packageJson": "libs/generate-issues/package.json",
+        "main": "libs/generate-issues/src/index.ts",
+        "assets": ["libs/generate-issues/*.md"]
+      }
+    }
+  },
+  "tags": []
+}
