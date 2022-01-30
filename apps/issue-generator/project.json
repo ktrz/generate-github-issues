@@ -1,0 +1,52 @@
+{
+  "root": "apps/issue-generator",
+  "sourceRoot": "apps/issue-generator/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/issue-generator",
+        "main": "apps/issue-generator/src/main.ts",
+        "tsConfig": "apps/issue-generator/tsconfig.app.json",
+        "assets": ["apps/issue-generator/src/assets"]
+      },
+      "configurations": {
+        "production": {
+          "optimization": true,
+          "extractLicenses": true,
+          "inspect": false,
+          "fileReplacements": [
+            {
+              "replace": "apps/issue-generator/src/environments/environment.ts",
+              "with": "apps/issue-generator/src/environments/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/node:execute",
+      "options": {
+        "buildTarget": "issue-generator:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/issue-generator/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/issue-generator"],
+      "options": {
+        "jestConfig": "apps/issue-generator/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
