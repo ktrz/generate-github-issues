@@ -1,6 +1,6 @@
 {
   "name": "generate-github-issues",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A tool allowing you to create issues using a template files",
   "license": "MIT",
   "author": "Chris Trzesniewski",
@@ -18,5 +18,10 @@
     "javascript",
     "typescript"
   ],
-  "bin": "index.js"
+  "bin": "index.js",
+  "dependencies": {
+    "@octokit/core": "^3.5.1",
+    "tslib": "^2.0.0",
+    "yargs": "^17.3.1"
+  }
 }
