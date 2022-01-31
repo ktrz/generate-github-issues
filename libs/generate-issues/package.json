@@ -1,4 +1,22 @@
 {
-  "name": "github-generate-issues",
-  "version": "0.0.1"
+  "name": "generate-github-issues",
+  "version": "0.0.1",
+  "description": "A tool allowing you to create issues using a template files",
+  "license": "MIT",
+  "author": "Chris Trzesniewski",
+  "homepage": "https://github.com/ktrz/generate-github-issues/tree/main/libs/generate-issues#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ktrz/generate-github-issues.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ktrz/generate-github-issues/issues"
+  },
+  "keywords": [
+    "github issues",
+    "generate",
+    "javascript",
+    "typescript"
+  ],
+  "bin": "index.js"
 }

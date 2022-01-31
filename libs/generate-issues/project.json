@@ -26,7 +26,7 @@
         "tsConfig": "libs/generate-issues/tsconfig.lib.json",
         "packageJson": "libs/generate-issues/package.json",
         "main": "libs/generate-issues/src/index.ts",
-        "assets": ["libs/generate-issues/*.md"]
+        "assets": ["libs/generate-issues/*.md", "libs/generate-issues/index.js"]
       }
     }
   },
