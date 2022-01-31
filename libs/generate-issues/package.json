@@ -1,6 +1,6 @@
 {
   "name": "generate-github-issues",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tool allowing you to create issues using a template files",
   "license": "MIT",
   "author": "Chris Trzesniewski",

@@ -9,13 +9,9 @@ This tool allows you to create issues using a template file
 | Option        | Shorthand   | Description                      | Type     | Required   |
 |---------------|-------------|----------------------------------|----------|------------|
 | --directory   | -d          | Directory with issue templates   | string   | true       |
-| ------------- | ----------- | -------------------------------- | -------- | ---------- |
 | --gh-token    | -t          | GitHub Access Token              | string   | true       |
-| ------------- | ----------- | -------------------------------- | -------- | ---------- |
 | --prefix      | -p          | Prefix added to issue title      | string   | false      |
-| ------------- | ----------- | -------------------------------- | -------- | ---------- |
 | --owner       |             | GitHub repository owner          | string   | true       |
-| ------------- | ----------- | -------------------------------- | -------- | ---------- |
 | --repo        |             | Directory with issue templates   | string   | true       |
 
 Example:
